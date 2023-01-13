@@ -1,0 +1,394 @@
+
+</!DOCTYPE html>
+<html>
+<head>
+
+	<title>Order Now</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" href="css/main-template.css">
+	<link rel="stylesheet" href="css/ordernow-style.css">
+	<link rel="stylesheet" href="css/footer-absolute.css">
+	
+	
+	
+	 
+</head>
+	  <style>
+	  h6{
+		font-size:14px;
+		}
+	h5{
+		font-size:14px;
+	}
+	</style>
+<body>
+
+ 
+<div id="header"></div>
+
+<br>
+
+			<div class = "row1">
+			<h2 class= title>Cake Customization</h2>
+				<div class="form-group form-group-inline">
+											<label style="color:red">The final price that will be billed the customer would depend on other factors such as <br>
+							designs, intricacy of the cake design, and other cake design accessories and other<br> special add-ons  to the cake set-up.</label><br> <br>
+					<label for="CakeTypebox">Cake / Cupcake Type *</label> <br>
+					<select name="CakeType" id="CakeTypebox" class="form-control selectpicker form-control-select" required>
+						<option value="">Choose Cake Type </option>
+						  <option value="Birthday Cake">Birthday Cake</option>
+						  <option value="Wedding Cake">Wedding Cake</option>
+						  <option value="Debut Cake">Debut Cake</option>
+						  <option value="Christmas Cake">Christmas Cake</option>
+						  <option value="New Year's Cake">New Year's Cake</option>
+						  <option value="Valentine's Cake">Valentine's Cake</option>
+						  <option value="Anniversary Cake">Anniversary Cake</option>
+						  <option value="Graduation Cake">Graduation Cake</option>
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+					<label for="CakeFlavorbox">Cake / Cupcake Flavor *</label> <br>
+					<label style="color:gray">Note: Cake Layers can be in Different Flavors, Add your Extra Flavor in Cake Note</label> <br>
+					<select name="CakeFlavor" id="CakeFlavorbox" class="form-control selectpicker form-control-select" required>
+						  <option value="">Choose Cake / Cupcake Flavor</option>
+						  <option value="Choco-Macadamia">Choco-Macadamia</option>
+						  <option value="Banana-Cashew">Banana-Cashew</option>
+	  					  <option value="Red Velvet">Red Velvet</option>
+	  					  <option value="Carrot-Walnut"> Carrot-Walnut</option>
+	  					  <option value="Citrus Light Fruit Cake"> Citrus Light Fruit Cake</option>
+	  					  <option value="Chocolate Cake"> Chocolate Cake</option>
+	  					  <option value="Mango Bravo"> Mango Bravo</option>
+					</select> 
+				</div>
+				
+				<div class="form-group form-group-inline">
+					<label for="CakeCoverbox">Cake / Cupcake Cover *</label> <br>
+					<select name="CakeCover" id="CakeCoverbox" class="form-control selectpicker form-control-select" required>
+						  <option value="">Choose Cake Cover</option>
+						  <option value="Soft Icing">Soft Icing</option>
+						  <option value="Fondant">Fondant</option>
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+				<label for="CakeLayerbox">Cake / Cupcake Layer *</label> <br>
+					<label for="CakeLayerbox"></label><br>
+					<select onchange = "Edible();" name="CakeLayer" id="CakeLayerbox" class="form-control selectpicker form-control-select" required>
+						  <option value="">Choose Cake Layer / Particular</option>
+						  <option value="Single Layer">Single Layer</option>
+						  <option value="Two Layers">Two Layers</option>
+						  <option value="Three Layers">Three Layers</option>
+						  <option value="Four Layers">Four Layers</option>
+						  <option value="Five Layers">Five Layers</option>
+						  <option value="Cupcake">Cupcakes</option>
+						  <option value="Cupcake Tower Package">Cupcake Tower Package</option>
+						  <option value="Mini Cake">Mini Cake</option>
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+				<label for="CakeCoverbox">Cake / Cupcake Size *</label> <br>
+					<label for="CakeSizesbox"></label><br>
+					<select name="CakeSize" id="CakeSizesbox" class="form-control selectpicker form-control-select" required>
+						  <option value="">Choose Cake Size (In Inches) / Cupcake Size </option>
+						  <option value="Single Layer 6x6">Single Layer 6x6</option>
+						  <option value="Single Layer 7x5">Single Layer 7x5</option>
+						  <option value="Single Layer 8x6">Single Layer 8x6</option>
+						  <option value="Single Layer 10x6">Single Layer 10x6</option>
+						  <option value="Single Layer 12x6">Single Layer 12x6</option>
+						  <option value="Two Layers 10x6">Two Layers 10x6</option>
+						  <option value="Two Layers 6x6">Two Layers 6x6</option>
+						  <option value="Three Layers 10x6">Three Layers 10x6</option>
+						  <option value="Three Layers 8x6">Three Layers 8x6</option>
+						  <option value="Three Layers 6x6">Three Layers 6x6</option>
+						  <option value="Four Layers 12x6">Four Layers 12x6</option>
+						  <option value="Four Layers 10x6">Four Layers 10x6</option>
+						  <option value="Four Layers 8x6">Four Layers 8x6</option>
+						  <option value="Four Layers 6x6">Four Layers 6x6</option>
+						  <option value="Five Layers 14x6">Five Layers 14x6</option>
+						  <option value="Five Layers 12x6">Five Layers 12x6</option>
+						  <option value="Five Layers 10x6">Five Layers 10x6</option>
+						  <option value="Five Layers 8x6">Five Layers 8x6</option>
+						  <option value="Five Layers 6x6">Five Layers 6x6</option>
+						  <option value="Cupcake with customized topper w/o individual packaging">
+						  Cupcake with customized topper w/o individual packaging</option>
+						  <option value="Cupcake with customized topper and with individual packaging">
+						  Cupcake with customized topper and with individual packaging</option>
+						  <option value="Mini Cake 3x2 with customized topper & packaging">
+						  Mini Cake 3x2 with customized topper & packaging</option>
+						  <option value="Mini Cake 4x3 with customized topper & packaging">
+						  Mini Cake 4x3 with customized topper & packaging</option>
+						  <option value = "Not Applicable (If Cupcake Tower Package)">Not Applicable (If Cupcake Tower Package)</option>
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+				<label for="CakeRadiobox" id = "allEdible">Are all layers Edible? *</label> <br>
+				
+				<form id="rates" onchange="showRate();">
+			  <input type="radio" onclick = "ifYes();" id="CakeRadiobox1" class = "form-check-input" name="radio" value="Yes, All Layer is Edible"> Yes, All Layer is Edible
+			  <input type="radio" onclick = "ifYes();" id="CakeRadiobox2" class = "form-check-input" name="radio"  value="No, Not All Layer is Edible"> No, Not All Layer is Edible
+			  <input type="radio" onclick = "ifYes();" id="CakeRadiobox3" class = "form-check-input" name="radio"  value="N/A (Cupcake Tower Package)"> N/A (Cupcake Tower Package)
+</form>
+
+				<!--  <form id="mainForm" name="mainForm">
+					<input type="radio" id="CakeRadiobox" class = "form-check-input" name="radio" value="Yes, All Layer is Edible" >
+							Yes, All Layer is Edible 
+ 					<input type="radio" id="CakeRadiobox" class = "form-check-input" name="radio" value="No, Not All Layer is Edible">
+ 							No, Not All Layer is Edible -->
+				</div>
+				</form>
+				<div class="form-group form-group-inline">
+					<label for="CakeEdiblebox">If No, Which Layer is Not Edible? *</i></label><br>
+					<select name="CakeEdible" id="CakeEdiblebox" class="form-control selectpicker form-control-select" required>
+						  <option value="">Choose Cake / Cupcake Layer that is Not Edible</option>
+						  <option value="First Layer">First Layer</option>
+						  <option value="Second Layer">Second Layer</option>
+						  <option value="Third Layer">Third Layer</option>
+						  <option value="Fourth Layer">Fourth Layer</option>
+						  <option value="Fifth Layer">Fifth Layer</option>
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+					<label for="CakeFlowerbox">Cake / Cupcake Flowers *</label><br>
+					<select name="CakeFlower" id="CakeFlowerbox" class="form-control selectpicker form-control-select" required>
+						  <option value="">Choose Cake Flower</option>
+						  <option value="Soft Piped">Soft Piped</option>
+						  <option value="Hard Sugar">Hard Sugar</option>
+						  
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+    				<label>Additional Cake Note</label><br>
+				    <input type="text" class="form-control form-control-inline" placeholder="Additional Note for your Custom Cake" id="CakeNotebox" style="height:70px;">
+				 </div>
+				 <div class="form-group form-group-inline">
+				 <label>Cake Inspiration Photo </label> <br>
+    				<input type="text"  class="form-control form-control-inline" 
+    				placeholder="Image Name" id="namesbox" style="width:200px;"> <label id="extlab"></label> <br><br> 
+    				<img id="myimg" class="form-group form-group-img"> <label id="upprogress"></label> <br>
+				 	<button type="button" id ="selbtn" class="btn btn-light">Select Image</button> 
+				 </div>
+				 <div class="form-group form-group-inline">
+					<label for="DTypebox">Type of Delivery *</label> <br>
+					<label style="color:gray">Note: We highly suggest to book a car if your choice of delivery is Grab or Lalamove
+					<br>Delivery is free in Manila, Quezon City or Makati with minimum P10,000 Cake Purchase </label>
+					<select name="DType" id="DTypebox" class="form-control selectpicker form-control-select" required>
+						<option value="">Choose Type of Delivery</option>
+  						<option value="Cakes by Lis Store Pick Up">Cakes by Lis Store Pick Up</option>
+  						<option value="Cakes by Lis Delivery">Cakes by Lis Delivery</option>
+  						<option value="Grab Delivery">Grab Delivery</option>
+  						<option value="Lalamove Delivery">Lalamove Delivery</option>
+					</select> 
+				</div>
+				 <div class="form-group form-group-inline">
+					<label for ="">Delivery Time *</label> <br>
+					<label style="color:gray">Note: If you choose tall cake, 
+					Please make sure to book 2 hours prior to the party</label> <br>
+					<select name="DType" id="DTimebox" class="form-control selectpicker form-control-select" required>
+						<option value="">Choose Delivery Time or Pick-Up Time</option>
+  						<option value="8:00AM">8:00am</option>
+  						<option value="9:00AM">9:00am</option>
+  						<option value="10:00AM">10:00am</option>
+  						<option value="11:00AM">11:00am</option>
+  						<option value="12:00AM">12:00am</option>
+  						<option value="1:00PM">1:00pm</option>
+  						<option value="2:00PM">2:00pm</option>
+  						<option value="3:00PM">3:00pm</option>
+  						<option value="4:00PM">4:00pm</option>
+  						<option value="5:00PM">5:00pm</option>
+  						<option value="6:00PM">6:00pm</option>
+  						<option value="7:00PM">7:00pm</option>
+  						<option value="8:00PM">8:00pm</option>
+  						<option value="9:00PM">9:00pm</option>
+  						<option value="10:00PM">10:00pm</option>
+  						<option value="11:00PM">11:00pm</option>
+  						<option value="12:00AM">12:00am</option>
+					</select> 
+				</div>
+				<div class="form-group form-group-inline">
+					<label>Delivery Date *</label> <br>
+					<input type="date" class="form-control form-control-inline" placeholder="Enter Your Delivery Date" id="DDatebox" 
+					minDate:new Date() required><br>
+				</div>
+				<div class="form-group form-group-inline">
+					<label>Additional Delivery / Pick Up Note</label> <br>
+					<input type="Text" class="form-control form-control-inline" placeholder="Additional Note for Delivery" id="Notebox" style="height:70px;"><br>
+				</div>
+</div>
+				<br><br>
+				<div class = "row">
+				
+			<h2 class= title>Customer Information</h2>
+				<div class="form-group form-group-inline">
+				<label style="color:red">Please take note that all 
+				your personal information is taken care of with confidentiality.</label> <br>
+				</div>
+				<div class="form-group form-group-inline">
+    				<label>Name *</label></h4> <br>
+				    <input type="text" class="form-control form-control-inline" placeholder="Enter Your Full Name" id="Namebox" >
+				 </div>
+				 
+				
+				<div class="form-group form-group-inline">
+					<label>Address *</label> <br>
+					<label style="color:gray">Note: If you choose Pick Up Delivery, Please type 'Pick Up Delivery'</label> <br>
+					<input type="text" class="form-control form-control-inline" placeholder="Enter Your Address" id="Addressbox" required><br>
+				</div>
+				
+				<div class="form-group form-group-inline">
+					<label>Facebook Name</label> <br>
+					<input type="text" class="form-control form-control-inline" placeholder="Enter Your Facebook Link" id="Facebookbox" required><br>
+				</div>
+				<div class="form-group form-group-inline">
+					<label>Email Address</label> <br>
+					<input type="email" class="form-control form-control-inline" placeholder="Enter Your Email Address" id="Emailbox" required><br>
+				</div>
+				<div class="form-group form-group-inline">
+					<label>Contact Number *</label> <br>
+					<input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        			type = "number" maxlength = "11" value="09"
+					class="form-control form-control-inline" placeholder="Enter Your Contact Number" id="Contactbox" required><br>
+				</div>
+				
+				
+				
+			</div>
+			</div>
+				
+			</div>
+<br>
+				<button type="submit" id ="Insbtn1" data-toggle="modal" data-target="#myModal1" 
+				onclick="myFunction()" class="btn btn-info btn-lg btn-block" 
+style="width:640px;margin-left:auto;margin-right:auto">Submit Order</button>
+
+<br>
+<br>
+<br>
+	<a id="ToSModalLink" href="ToSModal.html" data-toggle="modal" data-target="#ToSModal"></a>
+	<div id="ToSModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+	    <div class="modal-dialog modal-xl">
+	        <div class="modal-content">
+	        </div>
+	    </div>
+	</div>
+	<div id="ToSModal2" class="modal fade" data-backdrop="static" data-keyboard="false">
+	    <div class="modal-dialog modal-xl">
+	        <div class="modal-content">
+	        </div>
+	    </div>
+	</div>
+	<script src="js/ToSCheck.js"></script>
+</body>
+	<script type="module" src = "js/ordernow-java.js"></script>
+	<script src = "js/summary.js"></script>
+</html>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h5 class="modal-title">Summary of Orders </h5>
+        </div>
+        <div class="modal-body">
+        <style>
+        .disp1 {
+    display: inline-block;
+    font-weight: bold;
+    color: grey;
+}
+      .disp {
+    display: inline-block;
+        font-weight: bold;
+}
+        </style>
+          <center>
+          <h5>Please double check your customer and customized cake information before submitting. <br>
+          Take a screenshot for negotiation purposes.
+          </h5>
+          <h5 class = "disp1"> Cake Type:&nbsp</h5><h5 class = "disp" id="caketype"></h5><br>
+           <h5 class = "disp1"> Cake Flavor:&nbsp</h5><h5 class = "disp" id="cakeflavor"></h5><br>
+            <h5 class = "disp1"> Cake Cover:&nbsp</h5><h5 class = "disp" id="cakecover"></h5><br>
+             <h5 class = "disp1"> Cake Layer:&nbsp</h5><h5 class = "disp" id="cakelayer"></h5><br>
+              <h5 class = "disp1"> Cake Size:&nbsp</h5><h5 class = "disp" id="cakesize"></h5><br>
+            <h5 class = "disp1"> Are all Layers Edible?:&nbsp</h5><h5 class = "disp" id="cakeradio"></h5><br>
+             <h5 class = "disp1"> Which Layer is Not Edible?:&nbsp</h5><h5 class = "disp" id="cakeedible"></h5><br>
+             <h5 class = "disp1"> Cake Flower:&nbsp</h5><h5 class = "disp" id="cakeflower"></h5><br>
+              <h5 class = "disp1"> Additional Cake Note:&nbsp</h5><h5 class = "disp" id="cakenote"></h5><br>
+          	 <h5 class = "disp1"> Cake Insiration Picture Title:&nbsp</h5><h5 class = "disp" id="name"></h5><br>
+          	             <h5 class = "disp1"> Delivery Time:&nbsp</h5><h5 class = "disp" id="dtype"></h5><br>
+            <h5 class = "disp1"> Delivery Time:&nbsp</h5><h5 class = "disp" id="dtime"></h5><br>
+             <h5 class = "disp1"> Delivery Date:&nbsp</h5><h5 class = "disp" id="ddate"></h5><br>
+             <h5 class = "disp1"> Additional Delivery Note:&nbsp</h5><h5 class = "disp" id="note"></h5><br>
+             <br>
+              <h5 class = "disp1"> Full Name:&nbsp</h5><h5 class = "disp" id="fullname"></h5><br>
+               <h5 class = "disp1"> Address:&nbsp</h5><h5 class = "disp" id="address"></h5><br>
+                <h5 class = "disp1"> Facebool URL:&nbsp</h5><h5 class = "disp" id="facebook"></h5><br>
+                 <h5 class = "disp1"> Email Address:&nbsp</h5><h5 class = "disp" id="email"></h5><br>
+                  <h5 class = "disp1"> Contact Number:&nbsp</h5><h5 class = "disp" id="number"></h5><br><br>
+                  
+                  <h4 class = "disp1"> Estimated Cake Price:&nbsp</h4><h5 class = "disp" id="eprice"></h5><br>
+                  <i><h6 style = "font-size: 12px; "class = "disp" id="pricenote"></h6></i><br>
+          </center>
+
+        </div>
+        <div class="modal-footer">
+        <button type="submit" id ="Insbtn" class="btn btn-info" data-dismiss="modal">Submit Order</button>
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Submit Order</h4>
+        </div>
+        <div class="modal-body">
+          <p>Are You Sure You Want to Submit Your Order?</p>
+        </div>
+        <div class="modal-footer">
+        <button type="submit" id ="Insbtn" class="btn btn-info" data-dismiss="modal">Submit Order</button>
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> Modal -->
+  
+  
+    <script language="javascript">
+		
+   		var myCurrentDate=new Date();
+    	var myFutureDate=new Date(myCurrentDate);
+        	myFutureDate.setDate(myFutureDate.getDate()+ 7);
+        var today = new Date();
+        var dd = String(myFutureDate.getDate()).padStart(2, '0');
+        var mm = String(myFutureDate.getMonth() + 1).padStart(2, '0');
+        var yyyy = myFutureDate.getFullYear();
+
+        myFutureDate = yyyy + '-' + mm + '-' + dd;
+        $('#DDatebox').attr('min',myFutureDate);
+        
+    </script>
+    
+
+	
+ <script>  
+        $(function(){ 
+          $("#header").load("header.jsp");  
+        
+        }); 
+        </script>  
+
+ 
+
+
+	
+
